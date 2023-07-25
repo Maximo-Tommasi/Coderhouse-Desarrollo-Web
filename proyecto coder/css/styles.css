@@ -9,6 +9,7 @@
     position: sticky; 
     top: 0px;
     overflow: hidden;
+    z-index: 1;
 }
 
 .logoContainer{
@@ -28,12 +29,30 @@
     height: 70px;
 }
 
+ul{
+    margin: 0;
+}
+
 nav ul{
     display: flex;
     justify-content: end;
 }
 
+/*no me lo esta tomando*/
+.alineacionNav{
+    display: flex;
+    justify-content: end;
+}
+
+/*Esto a eliminar cuando termine el nav de bootstrap*/
 nav ul li{
+    list-style: none;
+    padding: 25px;
+    margin-right: 40px;
+    border-left: solid #f9f9f978 1px;
+}
+
+.nav-link{
     list-style: none;
     padding: 25px;
     margin-right: 40px;
@@ -53,16 +72,19 @@ nav ul li{
     padding-bottom: 10px;
 }
 
-a{ 
+ li a{ 
     color: white;
     font-size: 20px;
     text-decoration: none;
 }
 
+/*medias del navegador formato mobile*/
+
+
+
 .imagenPortada{
     width: 100%;
-    height: auto;
-    background-size: cover;
+    object-fit: cover;
 }
 
 .destacados{
