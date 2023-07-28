@@ -6,9 +6,9 @@
 
 .encabezado{
     background-color: #fffffff7;
-    position: sticky; 
+    overflow: auto;
+    position: sticky;
     top: 0px;
-    overflow: hidden;
     z-index: 1;
 }
 
@@ -23,11 +23,27 @@
     height: 70px;
 }
 
+
 .logo{
     padding: 2px;
-    width: auto;
+    width: 70;
     height: 70px;
 }
+
+/*medias para acomodar el logo a responsive*/
+
+@media (min-width: 321px) and (max-width: 413px){
+    .logo{
+        width: 97%;
+    } 
+}
+
+@media (max-width: 320px){
+    .logo{
+        width: 97%;
+    }
+}
+
 
 
 .navbar{
@@ -57,7 +73,7 @@
 
 .destacados{
     text-align: center;
-    font-size: 28px;
+    font-size: 32px;
     margin: 30px;
 }
 
@@ -68,11 +84,15 @@
     border-radius: 5px;
 } /*tamano de las imagenes destacadas en el index*/
 
+
+
 .figureDestacada{
+    font-size: large;
+    font-weight: 600;
     display: flex;
     flex-direction: column;
     align-items: center;
-} /*para centrar el texto debajo de las imagenes destacadas*/
+} /*para centrar el texto debajo de las imagenes destacadas y estilo de texto*/
 
 .margenesDestacados{
     display: flex;
@@ -80,11 +100,34 @@
     flex-wrap: wrap;
 }
 
-/*ATENCION medias para responsive de los modelos*/
-@media (max-width: 768px){
+/*medias para responsive de los modelos de auto*/
+/*medias para tablets y celus*/
+@media (min-width: 415px) and (max-width: 767px){
     .modeloDestacado{
-        height: 120px;
-        width: 180px;
+        height: 140px;
+        width: 215px;
+    }
+}
+
+@media (max-width: 767px){
+    .figureDestacada{
+        margin-bottom: 20px;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1200px){
+    .modeloDestacado{
+        height: 160px;
+        width: 225px;
+        margin: 0 60px 0 75px;
+    }
+}
+
+@media (min-width: 427px) and (max-width: 429px){
+    .modeloDestacado{
+        height: 165px;
+        width: 245px;
     }
 }
 
