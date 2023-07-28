@@ -87,7 +87,7 @@
 
 
 .figureDestacada{
-    font-size: large;
+    font-size: 18px;
     font-weight: 600;
     display: flex;
     flex-direction: column;
@@ -101,7 +101,6 @@
 }
 
 /*medias para responsive de los modelos de auto*/
-/*medias para tablets y celus*/
 @media (min-width: 415px) and (max-width: 767px){
     .modeloDestacado{
         height: 140px;
@@ -165,11 +164,42 @@
 
 /*cierro grid del footer*/
 
+#seguinos{
+    margin-bottom: 0px;
+}
+
+.iconoIg{
+   width: 60px;
+   height: 35px;
+   position: relative;
+   right: 14px;
+}
+
+.iconoWs{
+    width: 65px;
+    height: 55px;
+    position: relative;
+    right: 14px;
+ }
+ 
+
+.iconoYt{
+    width: 65px;
+    height: 50px;
+    position: relative;
+    right: 14px;
+ }
+ 
+.iconoTelefono{
+    width: 23px;
+    height: 23px;
+}
 
 .info{
     font-size: 24px;
     margin-top: 5px;
     margin-bottom: 12px;
+    font-weight: 600;
 }
 
 .infoContenido{
@@ -180,6 +210,21 @@
 .redes{
     display: flex;
     justify-content: space-around;
+    align-items: center;
+}
+
+@media (min-width: 320px) and (max-width: 767px){
+    .piePag{
+    grid-template-columns: 1 1fr;
+    grid-template-rows: repeat(3 1fr);
+    grid-template-areas:     "horarios"
+                             "telefono"
+                             "contacto";
+    row-gap: 50px;
+    }
+    .info{
+        font-size: 20px;
+    }
 }
 
 /*exclusivo para NOSOTROS*/
