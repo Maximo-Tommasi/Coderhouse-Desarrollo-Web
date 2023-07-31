@@ -3,11 +3,12 @@
     "development"
   ],
   "hints": {
-    "no-inline-styles": "off",
-    "axe/name-role-value": [
+    "compat-api/css": [
       "default",
       {
-        "link-name": "off"
+        "ignore": [
+          "height: fit-content"
+        ]
       }
     ],
     "axe/parsing": [
@@ -16,12 +17,11 @@
         "duplicate-id-active": "off"
       }
     ],
-    "compat-api/css": [
+    "no-inline-styles": "off",
+    "axe/name-role-value": [
       "default",
       {
-        "ignore": [
-          "height: fit-content"
-        ]
+        "link-name": "off"
       }
     ]
   }

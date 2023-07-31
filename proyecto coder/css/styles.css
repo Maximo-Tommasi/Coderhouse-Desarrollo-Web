@@ -32,7 +32,7 @@
 
 /*medias para acomodar el logo a responsive*/
 
-@media (min-width: 321px) and (max-width: 413px){
+@media (min-width: 321px) and (max-width: 900px){
     .logo{
         width: 97%;
     } 
@@ -43,8 +43,6 @@
         width: 97%;
     }
 }
-
-
 
 .navbar{
     background-color:  #fffffff7 !important;
@@ -235,10 +233,17 @@
 }
 
 .imagenEquipo{
-    object-fit: fill;
+    object-fit: cover;
     width: 68%;
     height: 550px;
     margin: 50px;
+}
+
+@media (min-width: 321px) and (max-width: 429px){
+    .imagenEquipo{
+        height: 200px;
+        width: 80%;
+    }
 }
 
 .descripcionContainer{
@@ -253,11 +258,56 @@
     row-gap: 10px;
     column-gap: 25px;
     text-align: justify;
+    margin: 0 200px 75px 200;
+    text-align: justify;
 }
+
+
 
 .parrafoFinal {
     font-weight: bold;
     color: #ff0000;
+    height: 10px;
 }
-/*---*/
 
+/*media para acomodar el texto en una sola columna para disp. chicos*/
+
+@media (min-width: 500px) and (max-width: 900px){
+    .descripcionContainer{
+            margin: 0 100px 50px 100px;
+            display: grid;
+            grid-template-columns: 1 1fr;
+            grid-template-rows: repeat(6 1fr);
+            grid-template-areas: "parrafo1"
+                                 "parrafo2"
+                                 "parrafo3"
+                                 "parrafo4"
+                                 "parrafo5"
+                                 "parrafo6";
+            row-gap: 10px;
+            column-gap: 25px;
+            text-align: justify;
+            font-size: medium;
+    }
+}
+
+    @media (min-width: 300px) and (max-width: 499px){
+        .descripcionContainer{
+                margin: 0 50px 50px 50px;
+                display: grid;
+                grid-template-columns: 1 1fr;
+                grid-template-rows: repeat(6 1fr);
+                grid-template-areas: "parrafo1"
+                                     "parrafo2"
+                                     "parrafo3"
+                                     "parrafo4"
+                                     "parrafo5"
+                                     "parrafo6";
+                row-gap: 10px;
+                column-gap: 25px;
+                text-align: justify;
+                font-size: 15px;
+        }
+}
+
+/*---*/
